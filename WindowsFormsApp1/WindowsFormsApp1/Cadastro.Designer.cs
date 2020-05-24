@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class frm_cadastro
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -38,11 +38,12 @@
             this.txt_idade = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_resposta = new System.Windows.Forms.TextBox();
+            this.lbl_resultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_calcular
             // 
-            this.btn_calcular.Location = new System.Drawing.Point(192, 75);
+            this.btn_calcular.Location = new System.Drawing.Point(171, 37);
             this.btn_calcular.Name = "btn_calcular";
             this.btn_calcular.Size = new System.Drawing.Size(101, 23);
             this.btn_calcular.TabIndex = 1;
@@ -117,16 +118,28 @@
             // 
             // txt_resposta
             // 
-            this.txt_resposta.Location = new System.Drawing.Point(192, 163);
+            this.txt_resposta.Location = new System.Drawing.Point(172, 163);
             this.txt_resposta.Name = "txt_resposta";
             this.txt_resposta.Size = new System.Drawing.Size(100, 20);
             this.txt_resposta.TabIndex = 11;
             // 
-            // Form1
+            // lbl_resultado
+            // 
+            this.lbl_resultado.AutoSize = true;
+            this.lbl_resultado.Location = new System.Drawing.Point(188, 135);
+            this.lbl_resultado.Name = "lbl_resultado";
+            this.lbl_resultado.Size = new System.Drawing.Size(55, 13);
+            this.lbl_resultado.TabIndex = 12;
+            this.lbl_resultado.Text = "Resultado";
+            this.lbl_resultado.Click += new System.EventHandler(this.lbl_resultado_Click);
+            // 
+            // frm_cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 274);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(291, 256);
+            this.Controls.Add(this.lbl_resultado);
             this.Controls.Add(this.txt_resposta);
             this.Controls.Add(this.txt_idade);
             this.Controls.Add(this.label1);
@@ -137,8 +150,8 @@
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.lbl_nome);
             this.Controls.Add(this.btn_calcular);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frm_cadastro";
+            this.Text = "Formulario de Cadastro";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,6 +169,7 @@
         private System.Windows.Forms.TextBox txt_idade;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_resposta;
+        private System.Windows.Forms.Label lbl_resultado;
     }
 }
 

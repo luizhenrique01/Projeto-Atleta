@@ -93,8 +93,7 @@ namespace WindowsFormsApp1
         public double CalcularIMC()
         {
             double imc;
-            imc = this.peso / Math.Pow(this.altura,2);
-            return imc;
+           return imc = this.peso / Math.Pow(this.altura,2);
         }
 
     }

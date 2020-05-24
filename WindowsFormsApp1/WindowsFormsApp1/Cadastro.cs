@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class frm_cadastro : Form
     {
-        public Form1()
+        public frm_cadastro()
         {
             InitializeComponent();
         }
@@ -56,6 +56,11 @@ namespace WindowsFormsApp1
                 MessageBox.Show(exeception.Message);
             }
 
+
+        }
+
+        private void lbl_resultado_Click(object sender, EventArgs e)
+        {
 
         }
     }
